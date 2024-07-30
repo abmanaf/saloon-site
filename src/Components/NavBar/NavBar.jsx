@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./NavBat.css"
+import './NavBar.css';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
@@ -7,6 +7,10 @@ function NavBar() {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
   };
 
   return (
@@ -27,11 +31,13 @@ function NavBar() {
         </div>
       </div>
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <button className='close-button' onClick={toggleSidebar}><img src="public/assets/images/icon-menu-close.svg" alt="" /></button>
+        <button className='close-button' onClick={toggleSidebar}>
+          <img src="/assets/images/icon-menu-close.svg" alt="close-menu" />
+        </button>
         <ul>
-          <li><Link  to="/">Home</Link></li>
-          <li><Link to="/Book">Book Appointment</Link></li>
-          <li><Link to="/SignIn">Sign In</Link></li>
+          <li><Link to="/" onClick={closeSidebar}>Home</Link></li>
+          <li><Link to="/Book" onClick={closeSidebar}>Book Appointment</Link></li>
+          <li><Link to="/SignIn" onClick={closeSidebar}>Sign In</Link></li>
         </ul>
       </div>
     </div>
