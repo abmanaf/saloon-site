@@ -16,9 +16,11 @@ function NavBar() {
   return (
     <div>
       <div className='header'>
+        
         <div className='site-logo'>
           <img src="/assets/images/lashes-logo-black.jpg" alt="logo" />
         </div>
+         
         <div className='header-items'>
           <ul>
             <li><Link to="/">Home</Link></li>
