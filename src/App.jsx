@@ -10,7 +10,6 @@ import Lashes from './Components/Lashes/Lashes'
 import Wig from './Components/Wig/Wig'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

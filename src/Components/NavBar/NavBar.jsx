@@ -17,9 +17,9 @@ function NavBar() {
         </div>
         <div className='header-items'>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/Book">Book Appointment</a></li>
-            <li><a href="/SignIn">Sign In</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Book">Book Appointment</Link></li>
+            <li><Link to="/SignIn">Sign In</Link></li>
           </ul>
         </div>
         <div className='menu-icon' onClick={toggleSidebar}>
@@ -29,9 +29,9 @@ function NavBar() {
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <button className='close-button' onClick={toggleSidebar}><img src="public/assets/images/icon-menu-close.svg" alt="" /></button>
         <ul>
-          <li><a  href="/">Home</a></li>
-          <li><a href="/Book">Book Appointment</a></li>
-          <li><a href="/SignIn">Sign In</a></li>
+          <li><Link  to="/">Home</Link></li>
+          <li><Link to="/Book">Book Appointment</Link></li>
+          <li><Link to="/SignIn">Sign In</Link></li>
         </ul>
       </div>
     </div>
