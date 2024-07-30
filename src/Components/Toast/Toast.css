@@ -1,0 +1,25 @@
+.toast-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--white);
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.toast-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.react-hot-toast {
+  transition: transform 0.6s ease-in-out;
+}
+
+.react-hot-toast--enter {
+  transform: translateX(0);
+}
+
+.react-hot-toast--exit {
+  transform: translateX(100%);
+}

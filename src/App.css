@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Glacial Indifference", sans-serif;
+}
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+body {
+  margin: 4em 20em;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-items ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.header-items ul li a {
+  color: var(--dark-grayish-blue);
+}
+.menu-icon {
+  display: none;
+}
+.header-items ul li a:hover {
+  color: var(--soft-red);
+}
+.mobile-image {
+  display: none;
+}
+h1 {
+  font-size: 2em;
+  color: #4d4e0a;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--very-dark-blue);
+  margin: 5px 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--off-white);
+  color: var(--very-dark-blue);
+  padding: 1em;
+  z-index: 9999;
+  transition: right 0.3s ease-in-out;
+}
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-button {
+  background: none;
+  border: none;
+  color: var(--off-white);
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.close-button img {
+  right: 0;
+  margin-left: 10em;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.5em;
+}
+
+.sidebar ul li a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.5em;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  color: var(--soft-red);
+}
+
+.site-logo img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 1em 1em;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .header-items {
+    display: none;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
+  body {
+    margin: 1em 1em;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .header-items {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1286px) {
+  body {
+    margin: 1em 1em;
+  }
+}

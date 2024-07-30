@@ -1,0 +1,25 @@
+input {
+  width: 100%;
+}
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .appointment-form {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2.5em;
+    height: 32rem;
+    margin-top: 2em;
+  }
+}
