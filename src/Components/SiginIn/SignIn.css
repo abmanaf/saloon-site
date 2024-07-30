@@ -1,9 +1,9 @@
-/* SignIn.css */
 .sign-in-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f0efef;
 }
 
 .sign-in-container div {
