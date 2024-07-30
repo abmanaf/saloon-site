@@ -36,11 +36,11 @@ function SignIn() {
                     <div className='button'>
                         <button> 
                             <img src="/assets/images/icon-apple.svg" alt="icon-apple" />
-                            <span>Sign In with Apple</span>
+                            <span> with Apple</span>
                         </button>
                         <button> 
                             <img src="/assets/images/icon-google.svg" alt="icon-google" />
-                            <span>Sign In with Google</span>
+                            <span> with Google</span>
                         </button>
                     </div>
                     <p style={{textAlign: 'center'}}>Or</p>
