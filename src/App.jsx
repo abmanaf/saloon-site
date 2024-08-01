@@ -12,6 +12,7 @@ import Wig from './Components/Wig/Wig'
 function App() {
 
   return (
+    
     <>
       <div>
         <NavBar/>
